@@ -1,3 +1,3 @@
-- [知识梳理]
-  - [网络][/network/README.md]
+- 知识梳理
+  - [网络](/network/README.md)
   - [操作系统](/os/README.md)
