@@ -1,0 +1,15 @@
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings/**
+**/target/**
+**/logs/**
+**/.DS_Store
+.vscode/**
+
+#idea ignore
+.idea
+*.ipr
+*.iml
+*.iws
+**/config-cache/**
