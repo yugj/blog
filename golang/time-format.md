@@ -4,7 +4,7 @@
 
 基于MarshalJSON、UnmarshalJSON 重写
 
-```
+```shell script
 // date format
 const timeFormat  = "2006-01-02T15:04:05.000"
 const dateFormat  = "2006-01-02"
@@ -18,13 +18,13 @@ func (t JsonTime) MarshalJSON() ([]byte, error)  {
 
 func (t *JsonTime) UnmarshalJSON (data []byte) error {
 
-	date := string(data)
-	if len(date) == 10 {
-		tmp, _ := time.ParseInLocation(dateFormat, date, time.Local)
-		*t = JsonTime(tmp)
+	dateStr := string(data)
+	if len(dateStr) == 12 {
+		date, _ := time.ParseInLocation(`"` + dateFormat + `"`, dateStr, time.Local)
+		*t = JsonTime(date)
 	} else {
-		tmp, _ := time.ParseInLocation(timeFormat, date, time.Local)
-		*t = JsonTime(tmp)
+		dateTime, _ := time.ParseInLocation(`"` + timeFormat + `"`, dateStr, time.Local)
+		*t = JsonTime(dateTime)
 	}
 
 	return nil
@@ -32,4 +32,12 @@ func (t *JsonTime) UnmarshalJSON (data []byte) error {
 ```
 
 ## 日期格式化
-6-1-2-3-4-5原则 2006-01-02T15:04:05.000
+注意点1：  
+dateStr := string(data) 出来的时间格式是 
+```
+""2006-01-02T15:04:05.000""
+```
+多出双引号，导致 format前需要加 `"`  
+注意点2：  
+6-1-2-3-4-5原则，   ParseInLocation入参是layout不是format，针对java程序员来说真的很别扭  
+2006-01-02T15:04:05.000
