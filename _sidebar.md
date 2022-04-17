@@ -26,7 +26,7 @@
  - [操作系统](/os/readme.md)
  - [project-management](/project-management/readme.md)
  - [rabbitmq](/rabbitmq/readme.md)
-    - [RabbitMq queue异常导致rabbitmq consumer停止消费问题处理](/rabbitmq/queue-exp-consume-error.md)
+    - [RabbitMq queue异常导致rabbitmq consumer停止消费问题处理](/rabbitmq/rabbitmq-queue-exp-consume-error.md)
  - [redis](/redis/readme.md)
  - [rocketmq](/rocketmq/readme.md)
  - [security](/security/readme.md)
