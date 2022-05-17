@@ -27,3 +27,6 @@
 * Thread Local Storage
   * thread local map 存储线程上下文数据
 
+## 相关文章
+CompletableFuture原理与实践-外卖商家端API的异步化 https://mp.weixin.qq.com/s/GQGidprakfticYnbVYVYGQ
+
