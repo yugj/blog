@@ -124,3 +124,5 @@ public boolean isAlive(Server server);
 
 Ribbon最大的有点就是允许用户定制化各种规则，很好的管理了节点状态及访问规则，基于规则扩展做一些好用的产品，比如灰度管理、目标节点能力不对等下的权重控制
 
+## ref
+https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-ribbon.html
