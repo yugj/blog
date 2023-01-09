@@ -5,3 +5,6 @@
 git clone http://username:password@remote
 
 若密码存在@符号，通过转义符号：%40，代替
+
+**查从哪个分支切出**
+git reflog show <childBranch>
