@@ -120,3 +120,6 @@ public class SimpleTableReplacer5 extends MySqlASTVisitorAdapter {
   }
 }
 ```
+
+## ref
+visit pattern ：https://www.runoob.com/design-pattern/visitor-pattern.html
