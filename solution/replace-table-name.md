@@ -123,3 +123,4 @@ public class SimpleTableReplacer5 extends MySqlASTVisitorAdapter {
 
 ## ref
 visit pattern ：https://www.runoob.com/design-pattern/visitor-pattern.html
+jsqlparser visit impl: https://stackoverflow.com/questions/32046965/sql-parser-to-alter-table-name
